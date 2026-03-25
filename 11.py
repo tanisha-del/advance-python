@@ -1,10 +1,11 @@
-menu={"pizza":100,"burger":50,"pasta":80}
-total=0
-while True:
-    item=input("Enter item (or exit): ")
-    if item=="exit":
-        break
-    if item in menu:
-        total+=menu[item]
-tax=total*0.1
-print("Total:",total+tax)
+lst=[10,20,4,45,99]
+largest=lst[0]
+second=lst[0]
+for i in lst:
+    if i>largest:
+        second=largest
+        largest=i
+    elif i>second and i!=largest:
+        second=i
+print(second)
+

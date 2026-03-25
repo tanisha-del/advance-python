@@ -1,8 +1,9 @@
-s=input("Enter sentence: ")
+lst=[1,2,2,3,3,3]
 freq={}
-for ch in s:
-    if ch.isalnum():
-        freq[ch]=freq.get(ch,0)+1
-for ch in freq:
-    if freq[ch]==1:
-        print(ch,end=" ")
+for i in lst:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+

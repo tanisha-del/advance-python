@@ -1,12 +1,14 @@
-records=[]
-n=int(input("Enter number of students: "))
+lst = []
+n = int(input("Enter number of elements: "))
 for i in range(n):
-    name=input("Name: ")
-    roll=input("Roll: ")
-    marks=int(input("Marks: "))
-    records.append({"name":name,"roll":roll,"marks":marks})
-for r in records:
-    if r["marks"]>=40:
-        print(r["name"],"Pass")
-    else:
-        print(r["name"],"Fail")
+    num = int(input("enter the numbers: "))
+    lst.append(num)
+minimum=lst[0]
+maximum=lst[0]
+for i in lst:
+    if i<minimum:
+        minimum=i
+    if i>maximum:
+        maximum=i
+print("Minimum:", minimum)
+print("Maximum:", maximum)

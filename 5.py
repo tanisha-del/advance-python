@@ -1,7 +1,8 @@
-lst=["apple","madam","python","level","hi there"]
-sorted_lst=sorted(lst,key=len)
-pal=[x for x in lst if x==x[::-1]]
-replaced=[x.replace(" ","-") for x in lst]
-print(sorted_lst)
-print(pal)
-print(replaced)
+#Find the sum of digits of a number.
+
+n=int(input("Enter a digit: "))
+sum=0
+while n>0:
+    sum=sum+n%10
+    n=n//10
+print("Sum:", sum)
